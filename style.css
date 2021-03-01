@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #555;
+    /*color: white;
+    background:  #1c1e21;*/
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background: #fff;
+    font-size: 20px;
+}
+.clearfix{zoom: 1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*
+#2F4050
+aksahi: #3273a8 (rgb(50, 115, 168))
+green: #32a88b (rgb(50, 168, 139))
+nil: #003366 (rgb(rgb(0, 51, 102)))
+red: #FF0000 (rgb(255, 0, 0))
+Meron: #800000 (rgb(128, 0, 0))
+*/
+a p{
+    font-weight: bold;
+}
+.container{
+    width: 85%;
+    margin: 0 auto ;
+}
+
+/**** Left Side****/
+
+.left{
+    position: relative;
+    float: left;
+    height: 100vh;
+    width: 20%;
+}
+
+/**** BRAND & SIDE MENU****/
+
+.brand{
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    padding: 15px;
+}
+.sidebar{
+    height: 80%;
+}
+.left .brand{
+    background-color: rgb(50, 168, 139, 0.1);
+    border-radius: 15px;
+}
+.sidebar .allpages{
+    margin-top: 5px;
+    height: auto;
+    background-color: rgb(50, 168, 139, 0.1);
+    border-radius: 15px;
+}
+.left .sidebar ul li{
+    padding-left: 15px;
+    margin: 10px;
+}
+.left .sidebar ul li a{
+    color: #000;
+    font-weight: 600;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+}
+.sidemenu-link-hover:hover{
+    background-color: rgb(50, 168, 139, 0.2);
+    border-radius: 25px;
+    margin-right: 20px;
+}
+.sidemenu-link-hover:hover{
+    color: rgb(50, 168, 139);
+}
+.sidemenu-link-hover .icon-link {
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+}
+.left .sidebar ul li a .fas{
+    width: 30px;
+}
+
+
+/**** OWN PROFILE ****/
+
+.profile{
+    background-color: rgb(50, 168, 139, 0.1);
+    border-radius: 15px;
+    margin-top: 5px;
+}
+.profile .row{
+    width: 90%;
+    margin: 10px 10px;
+}
+.profile .row .col-2{
+    width: 20%;;
+    float: left;
+    margin-right: 5px;
+}
+.circular-img img{
+    border-radius: 50%;
+    width: 30px;
+}
+.profile .row .col-6{
+    width: 55%;
+    float: left;
+    margin-top: 5px;
+}
+.profile .row .col-6 p{
+    font-weight: bold;
+    font-size: 15px;
+}
+.profile .row .col-4{
+    width: 15%;
+    margin-top: 5px;
+}
+.profile .row .col-4 i{
+    float: right;
+    margin-right: 0px;
+}
+.profile-row{
+    padding: 10px 5px;
+}
+.profile-row:hover{
+    background-color: rgb(50, 168, 139, 0.2);
+    border-radius: 25px;
+}
+
+
+
+/**** Middle Side****/
+.middle{
+    position: relative;
+    float: left;
+    height: 100vh;
+    width: 55%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.middle .active-page .page-name{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: rgb(50, 168, 139, 0.1);
+}
+.middle .active-page .page-name :hover{
+    color: rgb(50, 168, 139);
+}
+.active-page{
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+}
+
+
+.middleContent{
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    background-color: rgb(50, 168, 139, 0.03);
+}
+
+/**** POST TYPPING PART ****/
+
+
+.DP-circular-img img{
+    border-radius: 50%;
+    width: 50px;
+    padding-left: 5px;
+}
+.middleContent .row .col-2{
+    width: 15%;
+    position: relative;
+    float: left;
+}
+.middleContent .row .col-8{
+    width: 80%;
+    position: relative;
+    float: left;
+}
+.middleContent .row{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.post-comments p{
+    margin-bottom: 10px;
+}
+form .textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    overflow-y: scroll;
+}
+/*.submit-post {
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}*/
+
+.col-8 .post-icon .fas{
+    float: left;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-left: 15px;
+    padding: 5px;
+}
+.col-8 .post-icon .fas:hover{
+    background-color: rgb(50, 168, 139, 0.2);
+    border-radius: 50%;
+    transition: 0.1s;
+}
+.col-8 .post-icon{
+    float: left;
+    margin-top: 5px;
+}
+.col-8 .post-button{
+    float: right;
+}
+.btn-post{
+    display : inline-block ;
+    background : rgb(255, 255, 255) ;
+    color : rgb(50, 168, 139);
+    border: 2px solid rgb(50, 168, 139);
+    font-weight: 600;
+    padding : 3px 20px ;
+    margin : 5px 0;
+    border-radius : 30px ;
+}
+.btn-post:hover{
+    background : rgb(50, 168, 139);
+    color: white;
+    transition: 0.5s;
+}
+.submit-post:hover{
+    background-color: pink;
+}
+
+/***** POST STYLING *****/
+
+.title, .caption{
+    line-height: 20px;
+}
+.caption{
+    margin-right: 15px;
+    text-align: justify;
+}
+.title {
+    color: #000;
+    padding: 15px 0 ;
+    font-size: 25px;
+}
+.name p{
+    color: #555;
+    font-size: 15px
+}
+.caption{
+    font-size: 14px;
+    margin-top: 16px;
+}
+.pic-post{
+    margin-top: 20px;
+    padding-right: 5px;
+}
+.pic-post img{
+    border-radius: 3%;
+    width: 560px;
+    height: 400px;
+}
+
+
+
+/**** Right Side****/
+
+.right{
+    float: left;
+    width: 25%;
+    margin: 20px 0;
+}
+
+
+.right .search{
+    color: #000;
+    border-radius: 20px;
+    margin-top: 3px;
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    padding: 6px;
+    width: 80%;
+}
+.right .search:hover{
+    border: 3px solid rgb(50, 168, 139);
+}
+
+/***** WHO TO FOLLOW****/
+
+.follow-people{
+    margin-left: 20px;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+.right .follow-people{
+    background-color: rgb(50, 168, 139, 0.1);
+    border-radius: 15px;
+}
+.all-follower{
+    padding: 5px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.01);
+    border-top: 1px solid rgb(0, 0, 0, 0.1)
+}
+.all-follower:hover{
+    background-color: rgb(50, 168, 139, 0.2);
+    border-radius: 25px;
+}
+.follow-people .col-2{
+    width: 20%;
+    position: relative;
+    float: left;
+}
+.follow-people .col-6{ 
+    width: 40%;
+    position: relative;
+    float: left;
+}
+.follow-people .col-4{
+    width: 30%;
+    position: relative;
+    float: right;
+}
+.who-to-follow-name{
+    font-size: 11px;
+    font-weight: bold;
+}
+.who-to-follow-username{
+    font-size: 9px;
+}
+.btn-follow{
+    border-radius: 5px;
+    padding: 1px 3px;
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(50, 168, 139) ;
+    border: 2px solid rgb(50, 168, 139);
+}
+.btn-follow:hover{
+    background : rgb(50, 168, 139);
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/**** HERE IS THE FOOTER PART****/
+.footer{
+    margin-left: 20px;
+    margin-top: 5px;
+    
+    padding-top: 350px;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+
+.footer ul li{
+    float: left;
+}
+.footer ul li a{
+    font-size: 10px;
+}
+.footer ul li a:hover{
+    color: rgb(50, 168, 139);
+}
+.copyright{
+    text-align: right;
+    margin-right: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 10px;
+}
+.copyright .fas{
+    margin-right: 5px;
+}

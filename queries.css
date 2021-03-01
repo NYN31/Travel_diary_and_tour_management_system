@@ -1,0 +1,63 @@
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    /* left */
+    .brand img { width: 100%; }
+    .profile .row .col-6 p{ font-size: 12px; }
+    .left .sidebar ul li a{ font-size: 13px; }
+
+
+    /* middle */
+    .DP-circular-img img { width: 70%; }
+    p { font-size: 80%; }
+    .title {font-size: 90%; padding-top: 8px; }
+    .caption{ margin-top: 0px; font-size: 60%; }
+
+    /* right */
+    .follow-people h3{ font-size: 100%; }
+    .who-to-follow-name{ font-size: 9px; }
+    .follow-people .col-2{ margin-right: 3px; }
+    .follow-people{
+        margin-left: 10px;
+        margin-top: 15px;
+        padding-left: 5px;
+        padding-top: 5px;    
+    }
+    .copyright p { font-size: 7px; }
+    
+}
+
+/* Small tablet to big tablet: from  768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    /* left */
+    .left { width: 25%; }
+    .profile .row .col-6 p { font-size: 60%;}
+    .profile .row .col-2 img { width: 80%; }
+    /* middle */
+    .middle { width: 75%;}
+    .middle .active-page .page-name { font-size: 80%; }
+     /* right */
+    .right { width: 0; }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+       /* left */
+     
+     
+        .left { display: none; }
+        .midlle { width: 100%; }
+        .right { width: 0; }
+       /* middle */
+      
+        /* right */
+
+}
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+        /* left */
+      
+        /* middle */
+        
+         /* right */
+        
+}
