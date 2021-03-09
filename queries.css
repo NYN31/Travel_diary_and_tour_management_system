@@ -11,6 +11,7 @@
     p { font-size: 80%; }
     .title {font-size: 90%; padding-top: 8px; }
     .caption{ margin-top: 0px; font-size: 60%; }
+    .middle .pic-post img { width: 100%; }
 
     /* right */
     .follow-people h3{ font-size: 100%; }
@@ -28,33 +29,53 @@
 
 /* Small tablet to big tablet: from  768px to 1023px */
 @media only screen and (max-width: 1023px) {
+    .container { width: 95%; }
     /* left */
     .left { width: 25%; }
     .profile .row .col-6 p { font-size: 60%;}
     .profile .row .col-2 img { width: 80%; }
+
     /* middle */
     .middle { width: 75%;}
-    .middle .active-page .page-name { font-size: 80%; }
+    .middle .active-page .page-name { font-size: 90%; }
+
      /* right */
-    .right { width: 0; }
+    .right { display: none; }
 }
 
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
-       /* left */
-     
-     
-        .left { display: none; }
-        .midlle { width: 100%; }
-        .right { width: 0; }
-       /* middle */
+        .container { width: 100%; }
+
+        /* left */
+
+        .left {width: 10%;}
+        
+        .left .brand, .profile, .sidebar {display: none;}
+        .sidebar-menu-hide {display: inline-block; position: fixed; }
+        .sidebar-menu-hide ul li { padding-left: 20px; }
+        
+        /* middle */
+
+        .middle { width: 90%; float: right; }
+        
+        /* form .textarea { width: 60%; } */
+
+        .middle .pic-post img {height: 70%;}
+        .middleContent .row .col-2 { width: 15%; }
+        .middleContent .row .col-8 { width: 80%; }
+        
+       
       
         /* right */
+        .right { display: none; }
+
 
 }
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
         /* left */
+        .sidebar-menu-hide .icon-link {width: 80%;}
       
         /* middle */
         

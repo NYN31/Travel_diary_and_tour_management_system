@@ -40,12 +40,25 @@ a p{
 
 /**** Left Side****/
 
+.burger { 
+    display: none;
+    cursor: pointer;
+    margin-top: 30px; 
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+
 .left{
     position: relative;
     float: left;
     height: 100vh;
     width: 20%;
 }
+
 
 /**** BRAND & SIDE MENU****/
 
@@ -99,6 +112,22 @@ a{
     width: 30px;
 }
 
+.sidebar-menu-hide {
+    display: none;
+    height: 80%;
+}
+
+.sidemenu-link-hover-2 .icon-link {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.sidemenu-link-hover-2 img{
+    margin-top: 20px;
+    width: 30px;
+    border-radius: 50%;
+}
 
 /**** OWN PROFILE ****/
 
@@ -225,6 +254,10 @@ form .textarea{
     padding-right: 10px;
 
 }*/
+
+.middle .pic-post img {
+    width: 400px;
+}
 
 .col-8 .post-icon .fas{
     float: left;
