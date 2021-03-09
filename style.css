@@ -40,17 +40,6 @@ a p{
 
 /**** Left Side****/
 
-.burger { 
-    display: none;
-    cursor: pointer;
-    margin-top: 30px; 
-}
-.burger div{
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin: 5px;
-}
 
 .left{
     position: relative;
@@ -98,13 +87,12 @@ a p{
     border-radius: 25px;
     margin-right: 20px;
 }
-.sidemenu-link-hover:hover{
-    color: rgb(50, 168, 139);
-}
+
 .sidemenu-link-hover .icon-link {
     display: inline-block;
 }
-
+.sidebar ul .search { display: none;}
+.left .sidebar ul .search:hover { padding: 0;}
 a{
     text-decoration: none;
 }
@@ -112,22 +100,6 @@ a{
     width: 30px;
 }
 
-.sidebar-menu-hide {
-    display: none;
-    height: 80%;
-}
-
-.sidemenu-link-hover-2 .icon-link {
-    display: inline-block;
-    margin-top: 30px;
-    margin-right: 10px;
-}
-
-.sidemenu-link-hover-2 img{
-    margin-top: 20px;
-    width: 30px;
-    border-radius: 50%;
-}
 
 /**** OWN PROFILE ****/
 
@@ -177,6 +149,16 @@ a{
 
 
 /**** Middle Side****/
+
+
+/*Nav-bars*/
+
+.nav-var-menu { display: none; }
+.nav-var-menu .nav-var-link-hover-2 img {
+    border-radius: 50%;
+    width: 40px;
+}
+
 .middle{
     position: relative;
     float: left;
@@ -187,10 +169,9 @@ a{
 }
 
 .middle .active-page .page-name{
-    padding: 10px;
+    margin: 20px 0;
     font-size: 30px;
     font-weight: 600;
-    background-color: rgb(50, 168, 139, 0.1);
 }
 .middle .active-page .page-name :hover{
     color: rgb(50, 168, 139);
@@ -199,18 +180,18 @@ a{
     border: 1px solid rgb(0, 0, 0, 0.2);
     border-radius: 10px;
     margin-top: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-bottom: 15px;
 }
 
-
+.active-page {display: none;}
 .middleContent{
     border: 1px solid rgb(0, 0, 0, 0.2);
     border-radius: 10px;
     margin-top: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-bottom: 15px;
     background-color: rgb(50, 168, 139, 0.03);
 }
@@ -299,10 +280,10 @@ form .textarea{
 
 /***** POST STYLING *****/
 
-.title, .caption{
+.middleContent .title, .caption{
     line-height: 20px;
 }
-.caption{
+.middleContent .caption{
     margin-right: 15px;
     text-align: justify;
 }
@@ -312,11 +293,12 @@ form .textarea{
     font-size: 25px;
 }
 .name p{
-    color: #555;
+    color: #000;
     font-size: 15px
 }
-.caption{
-    font-size: 14px;
+.middleContent .caption{
+    color: #000;
+    font-size: 16px;
     margin-top: 16px;
 }
 .pic-post{
@@ -396,14 +378,14 @@ form .textarea{
     font-weight: bold;
 }
 .who-to-follow-username{
-    font-size: 9px;
+    font-size: 11px;
 }
 .btn-follow{
     border-radius: 5px;
-    padding: 1px 3px;
+    padding: 6px 10px;
     margin-top: 5px;
     font-weight: 600;
-    font-size: 10px;
+    font-size: 11px;
     background-color: rgb(255, 255, 255);
     color: rgb(50, 168, 139) ;
     border: 2px solid rgb(50, 168, 139);

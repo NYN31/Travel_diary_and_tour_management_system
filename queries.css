@@ -16,7 +16,7 @@
 
     /* right */
     .follow-people h3{ font-size: 100%; }
-    .who-to-follow-name{ font-size: 9px; }
+    .who-to-follow-name{ font-size: 11px; }
     .follow-people .col-2{ margin-right: 3px; }
     .follow-people{
         margin-left: 10px;
@@ -35,10 +35,10 @@
     .left { width: 25%; }
     .profile .row .col-6 p { font-size: 60%;}
     .profile .row .col-2 img { width: 80%; }
-
+    .sidebar ul .search { display: inline-block; padding: 0;}
+    .left .sidebar ul .search:hover { width: 170px; padding: 0px 3px;}
     /* middle */
     .middle { width: 75%;}
-    .middle .active-page .page-name { font-size: 90%; }
 
      /* right */
     .right { display: none; }
@@ -46,20 +46,34 @@
 
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
+
+        .burger { display: block; margin-right: 30px; }
+
         .container { width: 100%; }
 
         /* left */
-
-        .left {width: 10%;}
+        .left {display: none;}
         
         .left .brand, .profile, .sidebar {display: none;}
-        .sidebar-menu-hide {display: inline-block; position: fixed; }
-        .sidebar-menu-hide ul li { padding-left: 20px; }
+        
         
         /* middle */
+        .active-page {display: block;}
+        .nav-var-menu {
+            display: flex;
+        }
+        .nav-var-menu li img {
+            
+        }
+        .nav-var-menu li {
+            margin: 2% 4%;
+            list-style: none;
+        }
+        .nav-var-menu li .icon-link {font-size: 120%;}
+        .fas:hover { color:rgb(122, 213, 219);}
 
-        .middle { width: 90%; float: right; }
-        
+        .nav-var-menu li .icon-link {margin-top: 3%;}
+        .middle { width: 100%; }
         /* form .textarea { width: 60%; } */
 
         .middle .pic-post img {height: 70%;}
@@ -76,7 +90,7 @@
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
         /* left */
-        .sidebar-menu-hide .icon-link {width: 80%;}
+        
       
         /* middle */
         
